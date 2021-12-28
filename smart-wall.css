@@ -1,263 +1,238 @@
 
-    /*==========*/
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    body{
-        color: #fff;
-        font-family: Arial, Helvetica, sans-serif;
-        /*background-color: rgb(163, 8, 142); */
-        }
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                color: #fff;
+                font-family: Arial, Helvetica, sans-serif;
+                background-image: url(Laki3.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                }
 /*============================================================*/
 /*============================================================*/
-    /*===Start continer===*/
-    #flex-continer{
-        width: 90vw;
-        min-height: 100vh;
-        margin: 10px auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        gap: .5em;
-        border-radius: 10px;
-    }
+            /*===Start continer===*/
+            #flex-continer{
+                width: 95vw;
+                min-height: 100vh;
+                margin: 10px auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                gap: .5em;
+                border-radius: 10px;
+                box-shadow: 3px 3px 6px #fff;
+            }
 
-    /*===Start header===*/
-    header{
-        border: .1em solid rgb(0, 8, 8);
-        border-radius: 5px;
-        display: flex;
-        flex: 1;
-        flex-direction: row;
-        justify-content: center;
-        text-align: center;
-        padding: 20px;
-    }
-    header h1{
-        font-weight: bold;
-        font-size: 4em;
-        color: #fff;
-    }
-    /*===End header===*/
+            /*===Start header===*/
+            header, footer{
+                background-color: rgba(44, 44, 44, 0.5);
+                border-radius: 5px;
+                display: flex;
+                flex: 1;
+                flex-direction: row;
+                justify-content: center;
+                text-align: center;
+                padding: 20px;
+                border: .1em solid rgb(150, 151, 151);
+                border-radius: 5px;
+            }
+            header h1{
+                font-weight: bold;
+                font-size: 5em;
+                color: #cfcfcf;
+                box-shadow: 3px 3px 6px #fff;
+            }
+            /*===End header===*/
 
-    /*===Start Footer===*/
-    footer{
-        border: .1em solid rgb(0, 8, 8);
-        border-radius: 5px;
-        display: flex;
-        flex: 1;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        flex-direction: row;
-        text-align: center;
-    }
-    footer .footer-box{
-        color: #fff;
-        font-size: 1.5em;
-        font-weight: bold;
-    }
-    /*==End Footer===*/
+            /*===Start Footer===*/
+            footer{
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+            footer .footer-box{
+                color: #cfcfcf;
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+            /*==End Footer===*/
 /*============================================================*/
 /*============================================================*/
-    /*===Start Main===*/
-    main{
-        border: .1em solid rgb(0, 8, 8);
-        border-radius: 5px;
-        width: 100%;
-        min-height: 70vh;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-        text-align: center;
-        gap: .8em;
-    }
-/*============================================================*/
-     /*.block-one, .block-two{}
-/*============================================================*/
+            /*===Start Main===*/
+            main{
+                background-color: rgba(44, 44, 44, 0.5);
+                border-radius: 5px;
+                width: 100%;
+                min-height: 70vh;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: center;
+                text-align: center;
+                gap: .8em;
+            }
 
-    .block-one, .block-two{
-        border: .1em solid rgb(1, 77, 77);
-        border-radius: 5px;
-        width: 42%;
-        height: 70vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        text-align: center;
-        gap: .3em;
-    }
+
+            .block-one, .block-two{
+                border: .1em solid rgb(150, 151, 151);
+                border-radius: 5px;
+                width: 41%;
+                height: 70vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                text-align: center;
+                gap: .3em;
+                box-shadow: 3px 3px 6px #fff;
+            }
 /*============================================================*/
-   /* .item-a, .item-b, .item-c{}
-/*============================================================*/
-    .item-a, .item-b, .item-c{
-        border-radius: 5px;
-        width: 98%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 3px;
-    }
-    .item-a{
-        height: 15vh;
-        justify-content: space-between;
-    }
-    .item-b{
-        height: 25vh;
-        justify-content: space-between;
-    }
-    .item-c{
-        height: 25vh;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
+            .item-a, .item-b, .item-c{
+                border-radius: 5px;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 3px;
+            }
+            .item-a{
+                height: 15vh;
+                justify-content: space-between;
+            }
+            .item-b, .item-c{
+                height: 25vh;
+            }
+            .item-c{
+                align-items: flex-start;
+            }
 /*==============================================*/
-/*.box-left, .box-right, .big-box, .bottom-box{}
-/*==============================================*/
-    .box-left, .box-right{
-        border-radius: 5px;
-        width: 25%;
-        height: 15vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    .box-right{
-        flex-direction: row-reverse;
-    }
-    .big-box{
-        width: 40%;
-        height: 15vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        border-radius: 5px;
-    }
-    .bottom-box{
-        border-radius: 5px;
-        width: 28%;
-        height: 15vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        align-self: flex-end;
-    }
+            .box-left, .box-right, .big-box, .bottom-box{
+                border-radius: 5px;
+                width: 27%;
+                height: 15vh;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .box-right{
+                flex-direction: row-reverse;
+            }
+            .big-box{
+                width: 38%;
+                height: 15vh;
+            }
+            .bottom-box{
+                display: flex;
+                flex-direction: row;
+                align-self: flex-end;
+            }
 /*===========================================================================*/
-/*.child-1, .child-2, .child-bigbox1, .child-bigbox2, .bottom-child1, .bottom-child2{}
+            .child-pic1, .child-bigpic1, .bottom-childpic1{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
 /*===========================================================================*/
-    .child-1, .child-2, .child-box1, .child-box2, .bottom-child1, .bottom-child2{
-        border: .1em solid rgb(32, 51, 51);
-        border-radius: 5px;
-        margin: 5px;
-        object-fit: cover;
-    }
-    .child-1{
-        flex: 100px;
-        height: 70px;
-        background-color: rgb(220, 20, 153);
-    }
-    .child-2{
-        flex: 60px;
-        height: 40px;
-        background-color: rgb(228, 91, 182);
-    }
-    .child-box1{
-        flex: 150px;
-        height: 120px;
-        background-color: rgb(220, 20, 153);
-    }
-    .child-box2{
-        flex: 60px;
-        height: 60px;
-        background-color: rgb(212, 105, 176);
-    }
-    .bottom-child1{
-        flex: 100px;
-        height: 70px;
-        background-color: rgb(220, 20, 153);
-    }
-    .bottom-child2{
-        flex: 60px;
-        height: 40px;
-        background-color: rgb(212, 109, 178);
-     }
-
+            .child-1, .child-bigbox1, .bottom-child1{
+                border: .1em solid rgb(124, 126, 126);
+                border-radius: 5px;
+                margin: 5px;
+                object-fit: cover;
+            }
+/*===========================================================================*/
+            #divdrop1, #divdrop2, #divdrop3, #divdrop4, #divdrop5, #divdrop6, #divdrop7, #divdrop8{
+                border: .1em solid rgb(124, 126, 126);
+                border-radius: 5px;
+                margin: 5px;
+                flex: 80px;
+                height: 50px;
+                background-color: rgb(121, 160, 103);
+            }
+            .child-1, .bottom-child1{
+                flex: 120px;
+                height: 70px;
+                background-color: rgb(76, 90, 70);
+            }
+            .child-bigbox1{
+                flex: 180px;
+                height: 120px;
+                background-color: rgb(47, 61, 40);
+            }
 /*======================================================================*/
-/*.child-pic1{}
-.child-pic2{}
-.bigpic1{}
-.bigpic2{}
-.bottom-childpic1{}
-.bottom-childpic2{}
+/*  .block-sidebar, .items, .drags,           #divdrag1, #pic_drag1, */
 /*======================================================================*/
-/*.block-sidebar,
-..........item-cards,
-................worker,
-....................worker-pics
-/*======================================================================*/
-    /* =.block-sidebar,
-         ..item-cards,
-         ...worker,
-         ....worker-pics= */
+            .block-sidebar{
+                flex: 1;
+                width: 15%;
+                height: 70vh;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                text-align: center;
+                padding: 3px 5px;
+                border: .1em solid rgb(211, 214, 214);
+                border-radius: 5px;
+                box-shadow: 3px 3px 6px #fff;
+            }
+            .items{
+                display: flex;
+                width: 100%;
+                flex-direction: row;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 3px;
+                border: .1em solid rgb(211, 214, 214);
+                border-radius: 5px;
+            }
+            .drags{
+                flex: 1;
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .derag_item{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            #divdrag1, #divdrag2, #divdrag3, #divdrag4, #divdrag5, #divdrag6, #divdrag7, #divdrag8, #divdrag9, #divdrag10{
+                width: 100%;
+                height: 60px;
+                margin-bottom: 3px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border: .1em solid rgb(211, 214, 214);
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            #pic_drag1, #pic_drag2, #pic_drag3, #pic_drag4, #pic_drag5, #pic_drag6, #pic_drag7, #pic_drag8, #pic_drag9, #pic_drag10
+            {
+                width: 40px;
+                height: 40px; 
+            }
+            /* ===@Media=== */
+           
+            @media(max-width:480px){
+                .block-one, .block-two, .block-sidebar{display:flex; flex-direction: column; flex:100%;}
+            }
 
-    .block-sidebar{
-        border: .1em solid rgb(1, 77, 77);
-        border-radius: 5px;
-        width: 15%;
-        height: 70vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        text-align: center;
-        gap: .2em;
-        padding: 5px;
-    }
+            @media(max-width:768px){
+                .block-one, .block-two, .block-sidebar{display:flex; flex-direction: column; flex:100%;}
+            }
 
-    .item-cards{
-        width: 98%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-        gap: .2em;
-        padding: 3px;
-    }
-    .workers{
-        width: 98%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding: 3px;
-
-    }
-    .worker-pics{
-        object-fit: cover;
-        flex: 60px;
-        border: .1em solid rgb(76, 82, 82);
-        border-radius: 5px;
-        width: 98%;
-        padding: 3px;
-        background-color: rgb(124, 3, 104);
-    }
-    /* ===@Media=== */
-
-    @media(max-width:768px){
-        .block-one, .block-two, .block-sidebar{display:flex; flex-direction: column; flex:100%;}
-    }
-
-
-    @media(max-width:900px){
-        .block-one, .block-two, .block-sidebar{display:flex; flex-direction: column; flex:100%;}
-    }
-
-
+            @media(max-width:900px){
+                .block-one, .block-two, .block-sidebar{display:flex; flex-direction: column; flex:100%;}
+            }
+    
